@@ -1,0 +1,60 @@
+.t-tags{
+  border-color: $color-elements;
+  color: $color-elements;
+  background-color: transparent;
+  &:hover{
+    border-color: $color-inspire-basic;
+    background-color: $color-inspire-basic;
+    color: $color-text-light;
+  }
+}
+li{
+  font-family: $helvetica;
+  &.active a{
+    color:$color-inspire-active;
+    .icon{
+      fill:$color-inspire-active;
+    }
+  }
+}
+input, select, textarea, .t-dropdown{
+  background-color: $color-background-basic-light;
+  box-shadow: none;
+  border: 1px solid $color-shadow-border;
+  color: $color-text-medium;
+  &:focus{
+    border: 1px solid $color-inspire-second-light;
+    box-shadow: 0px 0px 3px 0px $color-inspire-second-light;
+
+  }
+  &[type="checkbox"]:focus{
+    border: none;
+    box-shadow: none;
+    outline: 1px dotted $color-inspire-second-dark;
+  }
+}
+input::placeholder{
+  color: $color-text-inactive;
+}
+.input-wrapper input, textarea{
+  &:hover{
+    cursor: text;
+  }
+}
+.input-wrapper input[type="radio"]:hover,
+.input-wrapper input[type="checkbox"]:hover{
+  cursor: pointer;
+}
+input.datetime-field{
+  background-image: url(../images/icons/cal_32.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 25px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+label{
+  color: $color-inspire-second-dark;
+}

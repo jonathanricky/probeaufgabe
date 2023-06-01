@@ -1,0 +1,125 @@
+
+.t-btn-submit, .t-btn-primary{
+  background-color: $color-inspire-light;
+  color: $color-neutral-light;
+  border: none;
+  &:hover{
+    background-color: darken($color-inspire-light,10%);
+    box-shadow: 0px 0px 5px 1px $color-shadow-light;
+    color: $color-text-light;
+  }
+}
+.t-btn-cancel{
+  color: $color-inspire-light;
+  border: none;
+  &:hover{
+    box-shadow: 0px 0px 3px 1px $color-shadow-light;
+    color: $color-inspire-basic;
+  }
+}
+.t-btn-primary input{
+  background-color: $color-inspire-nocolor;
+}
+.t-btn-link{
+  background-color: $color-inspire-nocolor;
+  border: 1px solid $color-inspire-nocolor;
+  text-transform: uppercase;
+  &:hover{
+    border: 1px solid $color-template;
+    color: $color-template;
+    cursor: pointer;
+  }
+}
+.t-btn-link, .t-btn-secondary{
+  color: $color-template;
+}
+.t-btn-secondary, .t-btn-primary.secondary,
+button.t-btn-secondary, button.t-btn-primary.secondary{
+  background-color: transparent;
+  border: 1px solid $color-template;
+  color: $color-inspire-light;
+  white-space: nowrap;
+  &:hover{
+    box-shadow: 0px 0px 3px 1px $color-shadow-light;
+    color: $color-inspire-basic;
+    background-color: transparent;
+  }
+}
+.t-btn-close{
+  fill: $color-neutral-dark;
+}
+.t-btn-icon-light > .icon{
+  fill:$color-neutral-middle;
+}
+.btn-neutral{
+  color: $color-inspire-basic;
+  &:hover{
+    box-shadow: 0px 0px 3px 0 $color-shadow-light;
+  }
+}
+.t-btn-icon{
+  background-color: transparent;
+  font-size: 12px;
+  border-radius: 20px;
+  &:hover{
+    cursor: pointer;
+    svg{
+      fill:$color-inspire-light;
+    }
+  }
+}
+.t-btn-icon.btn-submenu{
+  background-image: url("../images/icons/kebap_32.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.t-btn-small{
+  border-radius: 3px;
+  color: $color-text-light;
+  background-color: $color-inspire-light;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: inspire-regular;
+}
+.t-button-fixed-section{
+  background-color: $color-inspire-light;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  @extend %shadow-small-elem;
+}
+.t-btn-commit{
+  background-image: url("../images/icons/checked.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  &:hover{
+    background-position: bottom;
+    cursor: pointer;
+  }
+}
+.t-btn-save{
+  background-image: url("../images/icons/save.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  &:hover{
+    background-position: bottom;
+    cursor: pointer;
+  }
+}
+.t-btn-message-ok, .t-btn-primary.t-btn-message-ok{
+  min-width: 40px;
+  width: 40px;
+  background-color: #47519c;
+  color: #E3E4E1;
+  border: none;
+  padding: 8px 5px !important;
+  max-height: 30px;
+  box-sizing: border-box;
+  margin: 3px 0;
+  box-shadow: none;
+}

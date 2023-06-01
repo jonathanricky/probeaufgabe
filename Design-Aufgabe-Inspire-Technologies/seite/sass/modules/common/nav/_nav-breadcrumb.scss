@@ -1,0 +1,33 @@
+/**
+  * @stylesheet _portal-nav-breadcrumb.scss Breadcrumb
+  * @parent navigation
+  * This is the breadcrumb for service.
+  * It is always visible and helps a user navigate throughout the site as well shows him, where he is at the moment.
+  * @demo demos/portalnavbreadcrumb.html
+  **/
+.portal-nav-breadcrumb{
+  margin: 0;
+  border: 0;
+  padding: 10px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  clear: both;
+  white-space: initial;
+  position: relative;
+  top: 0;
+  left: 0;
+  li{
+    line-height: 10px;
+    padding: 0 1em;
+    position: relative;
+
+  }
+  @include RWD($tablet-small){
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    z-index: 3;
+		}
+}

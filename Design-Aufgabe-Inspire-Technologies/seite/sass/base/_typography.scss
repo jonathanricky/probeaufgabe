@@ -1,0 +1,74 @@
+/**
+  * @stylesheet _typography.scss Typography
+  * @parent styleguide.style
+  * Fonts, that we use on the site.
+  **/
+  body{
+  font-family: $helvetica;
+  font-size: 14px;
+  }
+/**
+    * @styles basicfont Basic font
+    * We use Helvetica as our base font with font-size: 14px,
+    * however for <p> elements we use font-size:18px;
+    * @demo demos/basicfont.html
+    **/
+  p{
+    font-size: 14px;
+    font-family: $helvetica;
+    line-height: 1.2em;
+    word-break: break-word;
+    white-space: normal;
+  }
+  strong{
+    font-weight: bold;
+  }
+  b{
+    font-weight: bold;
+    color: $color-inspire-light;
+  }
+/**
+  * @styles headers Headers
+  * ...
+  * @demo demos/latofont.html
+  **/
+h1, h2, h3, h4, h5, h6{
+  font-weight: 300;
+  line-height:1.1em;
+}
+h1{
+  font-size: 48px;
+}
+h2{
+  font-size: 32px;
+}
+h3{
+  font-size: 24px;
+}
+h4{
+  font-size: 18px;
+}
+h5{
+  font-size: 16px;
+}
+h6, label, button, h6 > p{
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+li{
+  line-height: 1.2em;
+}
+em{
+  font-style: italic;
+}
+/**
+  * @styles links Links
+  * The links are shown as a simple text with the hover effect.
+  * On a bright background, we use the color #C8C6D0, on the dark color #4E3F8E.
+  * @demo demos/links.html
+  **/
+a{
+  @extend %link-dark;
+  line-height: 1.2em;
+}

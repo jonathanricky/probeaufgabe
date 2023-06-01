@@ -1,0 +1,167 @@
+.t-icon-edit{
+  background-image: url(../images/icons/edit.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  &:hover{
+    background-position: top;
+  }
+}
+.t-icon-xls{
+  background-image: url(../images/icons/XLS_sprite.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  &:hover{
+    background-position: top;
+  }
+}
+.t-icon-save{
+  background-image: url(../images/icons/save.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.t-icon-cancel{
+  background-image: url(../images/icons/abort.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.t-icon-error{
+  background-image: url(../images/icons/error.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.t-icon-warning{
+  background-image: url(../images/icons/warning.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.t-icon-happy{
+  background-image: url(../images/icons/happyface.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.t-icon-success{
+  background-image: url(../images/icons/succeed.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.t-icon-add{
+  background-image: url(../images/icons/add_sprite.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  &:hover{
+    background-position: bottom;
+    cursor: pointer;
+  }
+}
+.t-icon-delete{
+  background-image: url(../images/icons/delete_sprite.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  &:hover{
+    background-position: bottom;
+    cursor: pointer;
+  }
+}
+.t-icon-delete-single{
+  background-image: url(../images/icons/delete_single.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.t-icon-info{
+  background-image: url(../images/icons/status_info.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.t-icon-status-new{
+  background-image: url(../images/icons/status_new.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.t-icon-status-error{
+  background-image: url(../images/icons/status_error.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.t-icon-status-active{
+  background-image: url(../images/icons/status_active.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.t-icon-status-finish{
+  background-image: url(../images/icons/status_finished.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.t-icon-share{
+  background-image: url(../images/icons/share.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.t-icon-close{
+  &:hover span:before, &:hover span:after{
+    background-color: $color-inspire-active;
+  }
+  span, span:before, span:after{
+    background-color: $color-inspire-nocolor;
+  }
+  span:before{
+    background: $color-inspire-basic;
+  }
+  span:after{
+    background: $color-inspire-basic;
+  }
+  &.active span {
+    background-color: $color-inspire-nocolor;
+  }
+}
+
+.t-icon-color-danger, .t-icon-color-danger > svg{
+  fill:$color-error;
+  &:hover{
+    fill:darken($color-error, 10%);
+  }
+}
+.t-icon-color-warning, .t-icon-color-warning > svg{
+  fill:$color-warning;
+  &:hover{
+    fill:darken($color-warning, 10%);
+  }
+}
+.t-icon-color-success,.t-icon-color-success > svg{
+  fill:$color-succes;
+  &:hover{
+    fill:darken($color-succes, 10%);
+  }
+}
+.t-icon-color-neutral{
+  fill:$color-inspire-basic;
+  &:hover{
+    fill:$color-inspire-light;
+  }
+}
+.t-icon-color-light{
+  fill:$color-text-light;
+  &:hover{
+    fill:$color-inspire-light;
+  }
+}

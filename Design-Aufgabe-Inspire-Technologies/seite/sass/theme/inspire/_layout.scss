@@ -1,0 +1,20 @@
+.t-wrapper-background{
+  box-shadow: 0px 3px 20px -5px $color-neutral-middle;
+  background-color: $color-background-basic-light;
+}
+.t-wrapper-header{
+  color: $color-template;
+  h6{
+    color: $color-template;
+    font-family: inspire-italic;
+  }
+}
+.t-wrapper-footer, .t-footer{
+  background-color: $color-background-basic-light;
+}
+.t-item{
+  &:first-child{
+    font-weight: bold;
+    color: $color-inspire-light;
+  }
+}

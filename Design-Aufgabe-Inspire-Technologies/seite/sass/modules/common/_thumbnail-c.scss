@@ -1,0 +1,77 @@
+/**
+  * @stylesheet _thumbnail-option.scss Thumbnail options
+  * @parent administrationmodule
+  * This is ...
+  * Use it to ..
+  * @demo demos/thumbnailoptions.html
+  **/
+  .portal-thumbnail-img-big{
+    height: 300px;
+    h6{
+      height: 32px;
+      overflow: hidden;
+    }
+    .img-big{
+      display: block;
+      overflow:hidden;
+      img{
+        width: 100%;
+      }
+    }
+    .img-info{
+      h4{
+        padding: 0 0 5px 0;
+        height: 11px;
+        height: 40px;
+        line-height: 1.5em;
+        overflow: hidden;
+      }
+      // height: 110px;
+      overflow:hidden;
+      padding: 10px;
+    }
+  }
+  .thumbnail-options{
+    display: grid;
+    grid-template-columns: max-content 1fr 30px;
+    border-top: 1px solid $color-neutral-light;
+    a{
+      @extend %link-dark;
+      padding: 10px 10px 0 0;
+      &:visited{
+        color: lighten( $color-inspire-light, 10% );
+      }
+    }
+    .icon{
+      @include icon ($icon-small, $color-inspire-light, 0px, 0px);
+      &:hover{
+        fill: $color-inspire-light;
+        cursor: pointer;
+        }
+    }
+
+    @include RWD($tablet-small){
+        .icon{
+          grid-column: 4;
+          padding: 5px;
+        }
+    }
+}
+.thumbnail-padding{
+  padding: 15px;
+  ul{
+    padding: 15px 0 0 0;
+    li{
+      display: block;
+      &:not(:last-child){
+        padding: 0 0 10px 0;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+h6{
+  padding: 20px 0 0 0;
+}
+}

@@ -1,0 +1,162 @@
+.nav-anonymous{
+  .t-nav-top{
+    background-color: $color-inspire-basic;
+  }
+  .t-portal-nav{
+    li .icon{
+      width: $icon-small;
+      height: $icon-small;
+      fill: $color-text-light;
+    }
+    a{
+      @extend %link-light;
+    }
+    &:hover{
+      a{
+        color:$color-neutral-light;
+      }
+      .icon{
+        fill:$color-neutral-light;
+      }
+    }
+    &:active{
+      a{
+        color:$color-neutral-light;
+      }
+      .icon{
+        fill:$color-neutral-light;
+      }
+    }
+  }
+}
+
+.t-nav-top{
+  background-color: $color-inspire-basic;
+}
+.t-portal-nav-breadcrumb{
+  li{
+    &::before, &::after{
+      content: '';
+      border-right: 1px solid $color-neutral-dark;
+      display: block;
+      height: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      transform: skewX(45deg);
+      }
+    &::after{
+      bottom: 0;
+      top: auto;
+      transform: skewX(-45deg);
+      }
+    &:last-of-type::before, &:last-of-type::after {
+      display: none;
+      }
+    a{
+      text-transform: uppercase;
+      // font-weight: bold;
+      font-size: 10px;
+    }
+  }
+}
+.t-portal-nav-module{
+  background-color: $color-inspire-basic;
+  .navi-item-second{
+    li{
+      .icon{
+        @include icon (32px, $color-text-light, 2px, 0px);
+      }
+    }
+  }
+  li{
+    color: $color-text-light;
+    a{
+      color: $color-text-light;
+      padding: 0 10px;
+    }
+
+    &:hover{
+      background-color: $color-inspire-basic;
+      a{
+        color:$color-text-light;
+      }
+      .icon{
+        fill:$color-text-light;
+      }
+    }
+  }
+  &.active{
+    .icon{
+      fill:$color-text-light;
+    }
+    a{
+      color: $color-text-light;
+    }
+  }
+}
+.t-portal-nav-module-wide{
+  .navi-item-second{
+    background-color: $color-neutral-dark;
+    border-top: 2px solid $color-neutral-middle;
+    border-bottom: 2px solid $color-neutral-middle;
+    li:hover, a:hover{
+      background-color: $color-neutral-dark;
+      color: $color-neutral-light;
+      cursor: pointer;
+    }
+  }
+}
+.t-portal-nav{
+  li{
+    .icon{
+      @extend %icon;
+      width: $icon-extra-small;
+      height: $icon-extra-small;
+      fill: $color-neutral-light;
+    }
+    a{
+      @extend %link;
+      color: $color-neutral-light;
+    }
+    &:hover{
+      a{
+        color:$color-neutral-light;
+      }
+      .icon{
+        fill:$color-neutral-light;
+      }
+    }
+    &:active{
+      a{
+        color:$color-neutral-light;
+      }
+      .icon{
+        fill:$color-neutral-light;
+      }
+    }
+  }
+
+}
+.t-nav-arrow{
+  background-color: $color-inspire-basic;
+  span{
+    background: $color-neutral-light;
+    &::after{
+      background-color: $color-background-basic-light;
+    }
+  }
+}
+
+.t-nav-burger-trigger{
+  a{
+    &:hover span:before, &:hover span:after{
+      background-color: $color-neutral-light;
+    }
+    span, span:before, span:after{
+      background: $color-neutral-light;
+    }
+  }
+}

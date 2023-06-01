@@ -1,0 +1,221 @@
+//mixins
+@mixin RWD($size) {
+    @media only screen and #{$size} {
+        @content;
+    }
+}
+%long-title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+%shadow-big-elem{
+  box-shadow: 1px 0 10px 0 $color-shadow-dark;
+}
+%shadow-big-elem-light{
+  box-shadow: 1px 0 20px 0 $color-shadow-light;
+}
+%shadow-small-elem{
+  box-shadow: 0 0 2px 0 $color-shadow-light;
+}
+%shadow-small-elem-hover{
+  box-shadow: 0 0 2px 0 $color-shadow-light;
+}
+%double-border{
+  background: none;
+  border: 1px solid $color-neutral-middle;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  pointer-events: none;
+}
+%flex-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+%flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+}
+%flex-row-equal-space{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: wrap;
+}
+//icon
+%icon{
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+@mixin icon ($icon-size, $icon-color, $position-left,$position-bottom){
+  @extend %icon;
+    width: $icon-size;
+    height: $icon-size;
+    min-width: $icon-size;
+    min-height: $icon-size;
+    left: $position-left;
+    bottom:$position-bottom;
+    fill: $icon-color;
+}
+
+//price in product thumbnail component
+%price-float-right{
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $helvetica;
+  background-color: transparent;
+  padding: 0 5px;
+  margin: 0;
+  border: 0px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+@mixin price($color) {
+  @extend %price-float-right;
+  color: $color;
+}
+
+// @mixin transition($args...) {
+//   -webkit-transition: $args;
+//   -moz-transition: $args;
+//   -ms-transition: $args;
+//   -o-transition: $args;
+//   transition: $args;
+// }
+//styles for buttons
+%btn{
+  height: 35px;
+  padding: 11px;
+  font-size: 12px;
+  white-space: nowrap;
+  display: inline-block;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  &:hover{
+    transition: all .2s;
+    cursor: pointer;
+  }
+  &:focus{
+    border: none;
+  }
+}
+// styles for links
+%link{
+  text-decoration: none;
+  vertical-align: baseline;
+  font-weight: 300;
+  &:active{
+    color:$color-inspire-light;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+
+}
+%link-dark{
+  @extend %link;
+  color: $color-inspire-light;
+}
+%link-light{
+  @extend %link;
+  color: $color-neutral-light;
+}
+//basic settings message
+@mixin message($message-color, $message-font) {
+  border-color:$message-color;
+  p{
+    font-size: $message-font;
+    color:$message-color;
+    display: inline-block;
+  }
+
+}
+
+//others placeholders
+
+//color of active item
+%active{
+  color: $color-inspire-light;
+}
+
+//basic settings for images
+%image{
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+//thumbnail for list item
+%list-item{
+  box-shadow: 0 0 2px 0 $color-shadow-light;
+  background-color: #FFF;
+  white-space: normal;
+  h2{
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: inspire-regular;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+&:hover{
+  box-shadow: 0 0 10px 0 $color-shadow-light;
+  }
+}
+%list-gallery-item{
+  position: relative;
+  @extend %list-item;
+  padding: 1em 1em;
+  height: 250px;
+  // max-width: 300px;
+  // min-width: 250px;
+  border-top: 8px solid $color-neutral-middle;
+  margin:10px;
+  h2{
+    line-height: 39px;
+    padding: 10px 0 0 0;
+    width: 100%;
+  }
+}
+%list-item-list{
+  @extend %list-item;
+  padding: 1em 0.5em 1em 1.5em;
+  margin: 5px 0 0 10px;
+  border-left: 8px solid $color-neutral-middle;
+  h2{
+    margin-right: 10px;
+    font-size: 28px;
+    min-width: 320px;
+  }
+}
+//certificate
+%certificate{
+  display: inline-block;
+  padding: 0 5px;
+  height: 32px;
+  span{
+    display: inline-block;
+    height: 20px;
+    text-transform: uppercase;
+  }
+  .product-features-icon{
+    @include icon ($icon-small, $color-inspire-basic, 4px, -7px);
+    display: inline-block;
+    }
+}

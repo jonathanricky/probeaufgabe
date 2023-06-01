@@ -1,0 +1,40 @@
+.section-header{
+  width: 100%;
+  padding: 25px 15px 0 15px;
+}
+.section-header-lead{
+  width: 100%;
+  padding: 20px 40px;
+}
+.section-show-more{
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-details-header{
+  width: 100%;
+  padding: 10px 15px 0 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  li{
+    .icon{
+      @include icon ($icon-medium, $color-inspire-second-dark, 0, 0);
+      &:hover{
+        fill:$color-inspire-active;
+        cursor: pointer;
+      }
+    }
+    h3{
+      padding: 0 10px;
+    }
+  }
+  li:last-child{
+    margin-left:auto;
+  }
+}

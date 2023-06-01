@@ -1,0 +1,87 @@
+/**
+  * @stylesheet _backgrounds-and-images.scss Backgrounds and images
+  * @parent styleguide.style
+  *
+  **/
+
+  /**
+    * @styles backgrounds backgrounds
+    * basic backgrounds used for different elements for Inspire theme.
+    * @demo demos/backgrounds.html
+    **/
+
+.t-background-main{
+  // background-color: $color-neutral-light;
+  background-image: radial-gradient($color-neutral-light, $color-background-basic-light);
+}
+
+.t-background-dark{
+  background-color: $color-inspire-basic;
+  color: $color-text-light;
+  &.sticky{
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 999;
+  }
+}
+.t-background-semitransparent{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  opacity: 0.85;
+}
+.t-background-overlay{
+  background-image: url(../images/background/background-bigPNG24.png);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: top left;
+  background-color: $color-inspire-basic;
+  opacity: 0.94;
+}
+.t-background-popup{
+  background-color: $color-neutral-dark;
+  @extend %shadow-big-elem;
+}
+.t-background-gradient-neutral{
+  background: linear-gradient(0deg, $color-neutral-light -10%, lighten($color-neutral-light, 10%) 40%);
+}
+
+  /**
+    * @styles logo logo
+    * How to use Platform logo on the dark background.
+    * @demo demos/logo.html
+    **/
+.t-logo{
+  background-color: $color-inspire-basic;
+  background-image: url('../images/logo/logo_inveriert.png');
+  background-size: auto;
+  background-position: left;
+}
+.t-logo-small{
+  @extend %image;
+  height: 40px;
+  width: 135px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-image: url('../images/logo/logo_inveriert.png');
+  background-size: 100%;
+  display: block;
+
+}
+.nav-active .t-logo-small{
+  // display: none;
+  @include RWD($tablet-small){
+    display: none;
+		}
+
+}
+.t-background-wait-layer{
+  background:$color-inspire-basic;
+  opacity: 0.7;
+  cursor: wait;
+}

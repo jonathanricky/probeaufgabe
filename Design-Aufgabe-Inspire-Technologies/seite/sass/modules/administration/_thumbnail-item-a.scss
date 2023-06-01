@@ -1,0 +1,75 @@
+.administration-thumbnails-item{
+  @extend %shadow-small-elem;
+  padding: 15px;
+  background-color: $color-text-light;
+  width: 320px;
+  margin: 15px;
+  &:hover{
+    @extend %shadow-big-elem;
+  }
+}
+.administration-thumbnails-item-header{
+  @extend %flex-row;
+  padding: 0 0 10px 0;
+  a{
+    max-height: 50px;
+    max-width: 245px;
+    overflow: hidden;
+    h3{
+      flex:1;
+    }
+    &:hover{
+      color: $color-inspire-active;
+      cursor: pointer;
+    }
+  }
+  .btn-submenu{
+    width: 32px;
+    height: 32px;
+    &:hover{
+      .icon{
+        fill:$color-inspire-active;
+      }
+    }
+  }
+}
+.administration-thumbnails-item-details{
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li{
+      width: 46%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding:10px;
+      margin: 3px;
+      background-color: $color-inspire-background-light;
+      color: $color-inspire-light;
+      font-family:inspire-italic;
+
+    }
+  }
+}
+
+.administration-thumbnails-item-user{
+  border: 1px solid $color-inspire-light;
+  border-top: 8px solid $color-inspire-light;
+}
+
+.administration-thumbnails-item-att{
+  border: 1px solid $color-inspire-basic;
+  border-top: 8px solid $color-inspire-basic;
+}
+
+.administration-thumbnails-item-server{
+  border: 1px solid $color-inspire-second-dark;
+  border-top: 8px solid $color-inspire-second-dark;
+}
+
+.administration-thumbnails-item-projekt{
+  border: 1px solid $color-inspire-second-light;
+  border-top: 8px solid $color-inspire-second-light;
+}

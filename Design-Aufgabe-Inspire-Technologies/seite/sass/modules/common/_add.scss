@@ -1,0 +1,35 @@
+.add-element{
+  display: inline-block;
+  padding: 1px 3px;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 5px;
+  span{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 28px;
+  }
+  &.add-element-div{
+    padding: 0px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    a{
+      @extend %link-light;
+      padding: 2px 8px;
+      font-size: 22px;
+      color: $color-inspire-second-dark;
+    }
+    &:hover{
+      cursor: pointer;
+      a{
+        color:$color-inspire-light;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}

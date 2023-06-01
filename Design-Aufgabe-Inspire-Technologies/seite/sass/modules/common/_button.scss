@@ -1,0 +1,90 @@
+  /**
+    * @stylesheet _button.scss Button
+    * @parent styleguide.components
+    * Buttons can be used to show the user’s choice of options for actions and assign these to a clear hierarchy.
+
+    *
+    * Basic buttons properties are located in placeholder %btn (file: _ mixin.scss).
+    * Brand specific properties are located in the file _buttons.scss.
+    * @demo demos/button.html
+    **/
+
+    // .btn{
+    //   @extend %btn;
+    // }
+    .button-section{
+      display: flex;
+      padding-bottom: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .button-center{
+      justify-content: center;
+    }
+    .btn-submit, .btn-cancel, .btn-primary, .btn-secondary, .btn-link{
+      @extend %btn;
+      margin: 10px;
+      // min-width: 60px;
+    }
+    .btn-close{
+      padding: 5px;
+      width: 30px;
+      position: absolute;
+      right: 8px;
+      top: 4px;
+    }
+    .btn-link{
+      &:hover{
+        transition: all .2s;
+
+      }
+      &:focus{
+        border: none;
+      }
+      .icon{
+        @include icon ($icon-extra-small, $color-inspire-light, 1px, -5px);
+      }
+    }
+    .btn-icon{
+      padding: 0px 5px;
+      border: none;
+      box-sizing: border-box;
+      &:hover{
+        transition: all .2s;
+        cursor: pointer;
+      }
+      &:focus{
+        border: none;
+        outline: none;
+      }
+      .icon{
+        @include icon ($icon-medium, $color-inspire-light, 0px, 0px);
+        display: inline-block;
+      }
+    }
+    .btn-small{
+      @extend %btn;
+      padding: 0px 9px;
+      width: 35px;
+      margin: 0 5px;
+    }
+    .button-fixed-section{
+      position: fixed;
+      right: 20%;
+      bottom: 0;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      .btn-icon{
+        display: block;
+        height: $icon-medium;
+        width: $icon-medium;
+        transition: none;
+      }
+    }
+    .btn-center{
+      margin: 5px auto;
+    }
+
+    

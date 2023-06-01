@@ -1,0 +1,45 @@
+.portal-l-leftsidebar {
+	grid-area: nav;
+	display: flex;
+	flex-direction: column;
+	z-index: 99;
+	height: 50px;
+	width: 50px;
+  position: fixed;
+  top: 0px;
+  padding: 0;
+}
+.portal-l-leftsidebar-wide{
+	.portal-l-leftsidebar{
+    width: 80px;
+  }
+	.nav-arrow{
+		right: unset;
+		left: 55px;
+	}
+	&.nav-active{
+		.nav-arrow{
+			left:unset;
+			right: 5px;
+		}
+		.nav-logo{
+			width: 180px;
+		}
+	}
+	@include RWD($tablet-small){
+		.portal-l-leftsidebar{
+	    width: $nav-width-rwd;
+	  }
+		.nav-logo{
+			width: 100%;
+		}
+		.nav-arrow{
+			display: none;
+		}
+	}
+	@include RWD($desktop){
+		.portal-l-leftsidebar{
+	    width: $nav-width-active;
+	  }
+	}
+}

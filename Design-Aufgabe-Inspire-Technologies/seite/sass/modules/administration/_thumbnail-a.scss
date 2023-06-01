@@ -1,0 +1,55 @@
+.administration-thumbnails{
+  @extend %shadow-small-elem;
+  padding: 10px 20px;
+  min-height: 120px;
+  &:hover{
+    @extend %shadow-big-elem;
+  }
+  h6{
+    flex: 1;
+    max-width: 245px;
+    height: 34px;
+    margin: 0 0 5px 0;
+  }
+  .thumbnails-details{
+    flex:1;
+    overflow: hidden;
+    ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li{
+        width: 46%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding:10px;
+        margin: 3px;
+        background-color: $color-inspire-background-light;
+        color: $color-inspire-light;
+      }
+    }
+  }
+  .thumbnail-header{
+    @extend %flex-row;
+    padding: 0 0 10px 0;
+    .icon{
+      height: $icon-small;
+      width: $icon-small;
+    }
+    h3{
+      flex:1;
+      height: 30px;
+      @extend %long-title;
+      max-width: 245px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+    .btn-submenu{
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

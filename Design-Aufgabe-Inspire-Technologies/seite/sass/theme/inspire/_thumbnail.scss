@@ -1,0 +1,415 @@
+.t-thumbnail{
+  background-color: $color-background-basic-light;
+  border-color: $color-inspire-basic;
+  .thumbnail-header{
+    .icon{
+      fill: $color-inspire-light;
+    }
+
+  &:hover{
+      color: $color-inspire-light;
+      .icon{
+        fill: $color-inspire-light;
+      }
+    }
+  }
+    .btn-submenu:hover{
+      .icon{
+        fill:$color-inspire-light;
+      }
+    }
+  .thumbnail-details{
+    h6{
+      color: $color-text-dark;
+    }
+    .icon{
+      fill:$color-inspire-basic;
+    }
+  }
+  .thumbnail-footer{
+    .badge-category{
+      color: $color-text-light;
+    }
+  }
+
+  &.portal-thumbnail-img-big{
+    background-color: $color-inspire-basic;
+    .img-big{
+      position: relative;
+      &::after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: $color-inspire-basic;
+        opacity: 0.2;
+        top: 0;
+        left:0;
+      }
+      // img{
+      //   height: 100%;
+      // }
+    }
+    .img-info{
+      background-color: $color-inspire-basic;
+      border-top: 1px solid $color-neutral-light;
+      color: $color-neutral-light;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &.portal-thumbnail-icon-big{
+    &:hover{
+      @extend %shadow-big-elem-light;
+      .icon{
+        fill:$color-inspire-light;
+        -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+	      animation: heartbeat 1.5s ease-in-out infinite both;
+      }
+    }
+    .icon{
+      fill: $color-inspire-light;
+      }
+  }
+
+  &.category-user{
+    border: 1px solid $color-inspire-light;
+    border-top: 8px solid $color-inspire-light;
+  }
+
+  &.category-att{
+    border: 1px solid $color-inspire-basic;
+    border-top: 8px solid $color-inspire-basic;
+  }
+
+  &.category-server{
+    border: 1px solid darken($color-inspire-light, 10%);
+    border-top: 8px solid darken($color-inspire-light, 10%);
+  }
+
+  &.category-projekt{
+    border: 1px solid $color-neutral-middle;
+    border-top: 8px solid $color-neutral-middle;
+  }
+
+  // marketplace thumbnail
+  &.category-template{
+    background-color: $color-neutral-light;
+    .thumbnail-header{
+      background-color:darken($color-inspire-light, 10%);
+      h4{
+        color: $color-text-light;
+      }
+    }
+    .thumbnail-details{
+      .icon{
+        fill: darken($color-inspire-light, 10%);
+      }
+    }
+    .thumbnail-footer{
+      background-color: darken($color-inspire-light, 10%);
+    }
+    &:hover{
+      @extend %shadow-big-elem;
+      .thumbnail-header{
+        color:$color-inspire-light;
+
+      }
+      .thumbnail-details{
+        .icon{
+          fill: $color-inspire-light;
+        }
+      }
+      .thumbnail-footer{
+        background-color: $color-inspire-light;
+      }
+    }
+  }
+
+  &.category-asisstant{
+    background-color: $color-neutral-light;
+    .thumbnail-header{
+      background-color:$color-assistant;
+      h4{
+        color: $color-text-light;
+      }
+    }
+    .thumbnail-details{
+      .icon{
+        fill: $color-assistant;
+      }
+    }
+    .thumbnail-footer{
+      background-color: $color-assistant;
+    }
+    &:hover{
+      @extend %shadow-big-elem;
+      .thumbnail-header{
+        color:darken($color-assistant, 10%);
+
+      }
+      .thumbnail-details{
+        .icon{
+          fill: darken($color-assistant, 10%);
+        }
+      }
+      .thumbnail-footer{
+        background-color: darken($color-assistant, 10%);
+      }
+    }
+  }
+
+  &.category-comfort-functionen{
+    background-color: $color-neutral-light;
+    .thumbnail-header{
+      background-color:$color-comfort;
+      h4{
+        color: $color-text-light;
+      }
+    }
+    .thumbnail-details{
+      .icon{
+        fill: $color-comfort;
+      }
+    }
+    .thumbnail-footer{
+      background-color: $color-comfort;
+    }
+    &:hover{
+      @extend %shadow-big-elem;
+      .thumbnail-header{
+        color:darken($color-comfort, 10%);
+
+      }
+      .thumbnail-details{
+        .icon{
+          fill: darken($color-comfort, 10%);
+        }
+      }
+      .thumbnail-footer{
+        background-color: darken($color-comfort, 10%);
+      }
+    }
+  }
+
+  &.category-bpmn{
+    background-color: $color-neutral-light;
+    .thumbnail-header{
+      background-color:$color-BPMN;
+      h4{
+        color: $color-text-light;
+      }
+    }
+    .thumbnail-details{
+      .icon{
+        fill: $color-BPMN;
+      }
+    }
+    .thumbnail-footer{
+      background-color: $color-BPMN;
+    }
+    &:hover{
+      @extend %shadow-big-elem;
+      .thumbnail-header{
+        color:lighten($color-BPMN, 10%);
+
+      }
+      .thumbnail-details{
+        .icon{
+          fill: lighten($color-BPMN, 10%);
+        }
+      }
+      .thumbnail-footer{
+        background-color: lighten($color-BPMN, 10%);
+      }
+    }
+  }
+
+  &.category-app{
+    background-color: $color-neutral-light;
+    .thumbnail-header{
+      background-color: $color-apps;
+      h4{
+        color: $color-text-light;
+      }
+    }
+    .thumbnail-details{
+      .icon{
+        fill: $color-apps;
+      }
+    }
+    .thumbnail-footer{
+      background-color: $color-apps;
+    }
+    &:hover{
+      @extend %shadow-big-elem;
+      .thumbnail-header{
+        color:darken($color-apps, 10%);
+      }
+      .thumbnail-details{
+        .icon{
+          fill: darken($color-apps, 10%);
+        }
+      }
+      .thumbnail-footer{
+        background-color: darken($color-apps, 10%);
+      }
+    }
+  }
+
+  &.category-service{
+    background-color: $color-neutral-light;
+    .thumbnail-header{
+      background-color: $color-service;
+      h4{
+        color: $color-text-light;
+      }
+    }
+    .thumbnail-details{
+      .icon{
+        fill: $color-service;
+      }
+    }
+    .thumbnail-footer{
+      background-color: $color-service;
+    }
+    &:hover{
+      @extend %shadow-big-elem;
+      .thumbnail-header{
+        color:darken($color-service, 10%);
+
+      }
+      .thumbnail-details{
+        .icon{
+          fill: darken($color-service, 10%);
+        }
+      }
+      .thumbnail-footer{
+        background-color: darken($color-service, 10%);
+      }
+    }
+  }
+
+  &.category-tutorial:hover{
+    @extend %shadow-big-elem;
+    .img-info{
+      background-color: $color-inspire-light;
+    }
+  }
+
+}
+
+.t-thumbnail-text{
+  border: 1px solid $color-neutral-middle;
+  border-top: 8px solid $color-neutral-middle;
+  background-color: $color-text-light;
+  .thumbnail-header:hover{
+      color: $color-inspire-light;
+    }
+    .btn-submenu:hover{
+      .icon{
+        fill:$color-inspire-light;
+      }
+    }
+}
+.t-thumbnail-icon{
+  border: 1px solid $color-inspire-basic;
+  background: $color-background-basic-light;
+  .thumbnail-header{
+    background-color: $color-inspire-basic;
+    h4{
+      color: $color-neutral-light;
+    }
+    &:hover{
+        background-color: lighten($color-inspire-basic, 10%);
+      }
+  }
+    .btn-submenu{
+      .icon{
+        fill:$color-neutral-light;
+      }
+      &:hover{
+        .icon{
+          fill:$color-text-light;
+        }
+      }
+    }
+
+}
+.t-thumbnail-step{
+  border: 1px solid transparent;
+  &:nth-child(n){
+    border-right:3px solid $color-inspire-basic;
+    .icon-big{
+      fill: $color-inspire-basic;
+    }
+  }
+  &:nth-child(2n){
+    border-right: 1px solid transparent;
+    box-shadow: -3px 0px darken($color-inspire-basic, 5%);
+    .icon-big{
+      fill: darken($color-inspire-basic, 5%);
+    }
+  }
+  &:nth-child(3){
+    border-right:3px solid darken($color-inspire-basic, 10%);
+    .icon-big{
+      fill: darken($color-inspire-basic, 10%);
+    }
+  }
+  &:nth-child(4){
+    box-shadow: -3px solid darken($color-inspire-basic, 15%);
+    .icon-big{
+      fill: darken($color-inspire-basic, 15%);
+    }
+  }
+  &:nth-child(5){
+    border-right:3px solid darken($color-inspire-basic, 20%);
+    .icon-big{
+      fill: darken($color-inspire-basic, 20%);
+    }
+  }
+}
+.t-thumbnail-border{
+  background-color: $color-background-basic-light;
+  h4,h6{
+    text-transform: uppercase;
+  }
+}
+.t-thumbnail-info-important{
+  border: 5px solid $color-comfort;
+  h4, h6{
+    color: $color-comfort;
+  }
+  .bold{
+    color: $color-comfort;
+    font-weight: bold;
+  }
+}
+.t-thumbnail-background-dark{
+  background-image: url(../images/thumbnails/thumbnail-texture.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  h4,h6,a{
+    text-transform: uppercase;
+    color: $color-text-light;
+  }
+  a:hover{
+    color: $color-neutral-light;
+  }
+}
+.t-thumbnail-pm{
+  background-color: $color-service;
+}
+.t-thumbnail-setting{
+  background-color: $color-inspire-light;
+}
+.t-thumbnail-dashboard{
+  background-color: $color-assistant;
+}
+.t-thumbnail-app{
+  background-color: $color-apps;
+  color: $color-inspire-basic;
+}

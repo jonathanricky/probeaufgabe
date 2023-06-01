@@ -1,0 +1,24 @@
+.portal-l-content{
+	grid-area: content;
+	display: grid;
+  grid-gap: 5px;
+	grid-template-columns: 99%;
+  grid-template-rows: max-content auto;
+	grid-template-areas:
+		"contenttop"
+		"contentmain"
+}
+
+.portal-l-contenttop
+{
+	grid-area: contenttop;
+	position: relative;
+}
+
+.portal-l-contentmain
+{
+	grid-area: contentmain;
+	padding: 5px;
+	/*max-width: 100vw;
+	max-height: 100vw;*/
+}

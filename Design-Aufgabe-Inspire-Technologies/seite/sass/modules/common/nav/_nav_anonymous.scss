@@ -1,0 +1,15 @@
+.nav-anonymous{
+  .portal-l-leftsidebar{
+    display: none;
+  }
+  .portal-nav{
+    height: 50px;
+    .nav-logo{
+      display: block;
+      @include RWD($tablet-small){
+        width: 150px;
+        background-size: 80%;
+      }
+    }
+  }
+}

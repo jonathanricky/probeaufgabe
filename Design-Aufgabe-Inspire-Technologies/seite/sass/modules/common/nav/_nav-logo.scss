@@ -1,0 +1,11 @@
+.nav-logo{
+  @extend %image;
+  height: 50px;
+  min-height: 50px;
+  width: 45px;
+  overflow: hidden;
+  box-sizing: border-box;
+  &:hover{
+    cursor: pointer;
+  }
+}

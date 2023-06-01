@@ -1,0 +1,14 @@
+@charset 'utf-8';
+//common sass settings
+@import '../utilities/_variable.scss';
+@import '../utilities/_mixin.scss';
+//basic settings
+@import '../base/--base.scss';
+@import '../layout/--layout.scss';
+@import "../modules/common/--common.scss";
+@import "../modules/common/nav/--nav.scss";
+
+//modules
+@import '../modules/administration/--administration.scss';
+
+@import '../theme/--inspire.scss';

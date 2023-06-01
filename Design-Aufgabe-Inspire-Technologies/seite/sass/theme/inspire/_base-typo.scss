@@ -1,0 +1,36 @@
+@font-face {
+    font-family: inspire-regular;
+    src: url("../font/ACaslonPro-Regular.otf");
+}
+@font-face {
+    font-family: inspire-semi;
+    src: url("../font/ACaslonPro-Semibold.otf");
+}
+@font-face {
+    font-family: inspire-italic;
+    src: url("../font/ACaslonPro-Italic.otf");
+}
+body{
+  color: $color-text-medium;
+}
+.nav-component li{
+  font-family: inspire-regular;
+}
+h1,h2,h3,h4,h5,h6,h6 > p, .nav-component li,
+.add-element, .calendar .head .title{
+  font-family: inspire-italic;
+}
+.t-text-center{
+  text-align: center;
+}
+
+.t-text-simple{
+  h2,h6{
+    color: $color-text-light;
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.3em;
+  }
+  h2,h6,a{
+    z-index: 1;
+  }
+}

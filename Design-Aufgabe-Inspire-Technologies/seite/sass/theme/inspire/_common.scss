@@ -1,0 +1,119 @@
+.t-accordion{
+  .accordion-header{
+    color: $color-inspire-light;
+    border-color: $color-inspire-light;
+  }
+}
+.t-separate:not(:last-child){
+  border-bottom: 1px solid $color-neutral-middle;
+}
+.t-dropdown{
+  h6{
+    color: $color-neutral-dark;
+    &:hover{
+      color: $color-inspire-light;
+    }
+  }
+  ul{
+    box-shadow: 0 0 2px 0 $color-shadow-light;
+    background-color: $color-background-basic-light;
+    border: 1px solid $color-inspire-second-light;
+  }
+  li{
+    color: $color-inspire-light;
+    &:hover{
+      background-color: $color-inspire-background-light;
+      color: $color-inspire-second-dark;
+      }
+    }
+}
+.t-dropdown-sort, .t-dropdown-icon{
+  &:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid $color-inspire-second-light;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    pointer-events: none;
+  }
+}
+.t-dropdown-language{
+  h6{
+    display: block;
+    font-size: 1.4em;
+  }
+  &:after{
+    content: '';
+    border: solid $color-text-light;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    pointer-events: none;
+    top: 5px;
+    right: 0;
+  }
+  ul{
+    box-shadow: 0 0 2px 0 $color-shadow-light;
+    background-color: $color-background-basic-light;
+    border: 1px solid $color-inspire-second-light;
+  }
+  li{
+    color: $color-inspire-light;
+    &:hover{
+      color: $color-neutral-dark;
+    }
+  }
+}
+.t-message-error{
+  color: $color-error;
+}
+
+.t-resizable-wrapper{
+  background-color: $color-neutral-light;
+  border: 2px solid $color-neutral-light;
+  & > *{
+    background-color: $color-background-basic-light;
+    border: 1px solid $color-background-basic-light;
+  }
+  & > *, & > * >*{
+    box-shadow: none;
+  }
+  .js-resizable-resizer{
+    & > span{
+      border: 1px solid $color-succes;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+.t-add-element{
+  background-color: $color-inspire-basic;
+  a, span{
+    color: $color-text-light;
+    font-size: 24px;
+    &:visited{
+      color: $color-text-light;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &:hover{
+    background-color: $color-inspire-light;
+    box-shadow: 0 0 10px 0 $color-shadow-light;
+    cursor: pointer;
+    a,span{
+      color:$color-text-light;
+      text-decoration: none;
+    }
+  }
+
+}

@@ -1,0 +1,32 @@
+  /**
+    * @stylesheet _nav-component.scss Navigation for component
+    * @parent navigation
+    * Use it whenever you need to have navigation inside a component.
+    * You shouldn't have more than 7-8 elements in your navigation.
+    * @demo demos/componentnav.html
+    **/
+.nav-component{
+  margin: 0;
+  border: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  li{
+    padding: 20px 20px 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    span{
+      padding: 0 5px 0 0;
+    }
+    a, span{
+      @extend %link-dark;
+      display: inline-block;
+      text-transform: uppercase;
+      // font-weight: bold;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+
+}

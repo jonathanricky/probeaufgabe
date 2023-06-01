@@ -1,0 +1,54 @@
+//thumbnail with image in background, e.x. happiness factor
+.l-thumbnail-img{
+
+}
+//thumbnails with big photo, e.x.  start site
+.l-thumbnail{
+  width: 320px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  box-sizing: border-box;
+  &:hover{
+    cursor: pointer;
+  }
+  .thumbnails-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+//steps or vertical lists
+.l-thumbnail-step{
+  width: 50%;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  .icon-big{
+    flex: 1;
+    margin: 0;
+  }
+  .icon-info{
+    flex:5;
+    padding: 0 20px;
+    h4{
+      padding-bottom: 10px;
+    }
+  }
+  &:nth-child(n){
+    flex-direction: row-reverse;
+    .icon-info{
+      text-align: right;
+    }
+  }
+  &:nth-child(2n){
+    flex-direction: row;
+    margin-left: auto;
+    .icon-info{
+      text-align: left;
+    }
+  }
+
+}

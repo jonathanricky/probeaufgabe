@@ -1,0 +1,60 @@
+/**
+  * @stylesheet _portal-nav-module.scss Secondary navigation
+  * @parent navigation
+  * This is the secondary navigation for the platform.
+  * It shows a list of modules, which are available for a user.
+  * @demo demos/portalnavmodules.html
+  **/
+
+.portal-nav-module{
+  display: none;
+  position: relative;
+  float: left;
+  border: 0;
+  list-style: none;
+  width: 100%;
+  @include RWD($tablet-small){
+    display: block;
+		margin: 0;
+	   }
+  li{
+    padding: 0.2em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    @include RWD($tablet-small){
+  		padding: 0.4em 0;
+  	   }
+    .icon{
+      display: block;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  a{
+    @extend %link;
+    line-height: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 0 0 5px;
+  }
+  .navi-item-second{
+    display: none;
+    a{
+      margin: 0 0 0 10px;
+    }
+  }
+  .navi-item-open{
+    .navi-item-second{
+      display: block;
+      margin: 5px 0;
+    }
+  }
+}
+.portal-nav-module-wide{
+  padding: 10px 0;
+  .navi-item{
+    padding: 0.6em 0.3em;
+  }
+}

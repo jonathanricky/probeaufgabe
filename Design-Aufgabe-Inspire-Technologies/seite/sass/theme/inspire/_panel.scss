@@ -1,0 +1,46 @@
+.t-panel-item{
+  .panel-item-header{
+    h4{
+      text-transform: uppercase;
+      font-family: 'inspire-regular';
+    }
+  }
+  input[readonly="readonly"], input[readonly]{
+    background-color: lighten($color-neutral-light, 10%);
+    border: 1px solid $color-neutral-middle;
+    color: $color-neutral-middle;
+  }
+}
+.t-panel-filter{
+  background-color: $color-neutral-light;
+  @extend %shadow-small-elem;
+}
+.t-panel-document-prev{
+  .document-thumbnail{
+    border-bottom: 2px solid $color-neutral-middle;
+  }
+  .toolset-nav-pdf{
+    span{
+      font-family: inspire-italic;
+      font-size: 14px;
+      line-height: 1.2em;
+    }
+    button{
+      background-color: transparent;
+      width: 22px;
+      height: 22px;
+    }
+    .document-page-prev{
+      background-image: url(../images/icons/arrow_left_32.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .document-page-next{
+      background-image: url(../images/icons/arrow_right_32.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

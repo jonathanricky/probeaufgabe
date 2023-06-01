@@ -1,0 +1,88 @@
+/**
+  * @stylesheet _colors.scss Color Palette
+  * @parent styleguide.style
+  *
+  **/
+
+  /**
+    * @styles basic Inspire colors
+    * basic Inspire colors
+    * @demo demos/basiccolors.html
+    **/
+    .t-inspire-basic{
+      background-color: $color-inspire-basic;
+    }
+    .t-inspire-light{
+      background-color: $color-inspire-light;
+    }
+    .t-inspire-second-dark{
+      background-color: darken($color-inspire-light, 15%);
+    }
+    .t-inspire-second-light{
+      background-color: $color-neutral-middle;
+    }
+    .t-inspire-active{
+      background-color: $color-inspire-light;
+    }
+    .t-inspire-background-light{
+      background-color: $color-neutral-light;
+      &:hover{
+        background-color: darken($color-neutral-light, 10%);
+      }
+    }
+
+
+    /**
+      * @styles marketplace Marketplace colors
+      * colors for marketplace categories
+      * @demo demos/marketplacecolors.html
+      **/
+      .t-process-light{
+        background-color: $color-template-light;
+      }
+      .t-process-dark{
+        background-color: $color-template-dark;
+      }
+      .t-service-light{
+        background-color: $color-DA-light;
+      }
+      .t-service-dark{
+        background-color: $color-DA-dark;
+      }
+      .t-dataModel-light{
+        background-color: $color-comfort-light;
+      }
+      .t-dataModel-dark{
+        background-color: $color-comfort-dark;
+      }
+      .t-portal-light{
+        background-color: $color-bpmn-light;
+      }
+      .t-portal-dark{
+        background-color: $color-bpmn-dark;
+      }
+      .t-analytisc-light{
+        background-color: $color-app-light;
+      }
+      .t-analytisc-dark{
+        background-color: $color-app-dark;
+      }
+      .t-interface-light{
+        background-color: $color-DA-light;
+      }
+      .t-interface-dark{
+        background-color: $color-DA-dark;
+      }
+
+
+      /**
+        * @styles others Others colors
+        * Others color used for different elements on the site.
+        * @demo demos/otherscolors.html
+        **/
+        .t-color-yellow{
+          background-color: $color-yellow;
+        }
+        .t-color-orange{
+          background-color: $color-orange;
+        }
