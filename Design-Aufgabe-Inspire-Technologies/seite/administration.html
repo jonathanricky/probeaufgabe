@@ -1,223 +1,309 @@
 <!DOCTYPE html>
 <html xmlns:isp="http://bpm-inspire.com/inform">
-<head>
-    <meta charset="UTF-8">
-    <meta isp:server isp:genversion="1.0" isp:gentype="Page"/>
-    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta isp:server isp:genversion="1.0" isp:gentype="Page" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/icons/favicon.ico" />
     <script type="text/javascript" src="lib/jquery/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="lib/jquery-ui-1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" type="text/css" href="lib/jquery-ui-1.12.1/jquery-ui.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/jquery-ui-1.12.1/jquery-ui.structure.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/jquery-ui-1.12.1/jquery-ui.theme.css"/>
+    <script
+      type="text/javascript"
+      src="lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="lib/jquery-ui-1.12.1/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="lib/jquery-ui-1.12.1/jquery-ui.structure.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="lib/jquery-ui-1.12.1/jquery-ui.theme.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/inspire-rapid.css"/>
-
+    <link rel="stylesheet" type="text/css" href="css/inspire-rapid.css" />
 
     <title>Inspire Platform</title>
-</head>
-<body class="portal-l-wrapper t-background-main nav-active">
-
-<div class="portal-l-header">
-<div class="portal-nav t-nav-top ">
-  <div class="portal-nav t-nav-top ">
-      <ul class="portal-nav-top t-portal-nav ">
-          <li>
+  </head>
+  <body class="portal-l-wrapper t-background-main nav-active">
+    <div class="portal-l-header">
+      <div class="portal-nav t-nav-top">
+        <div class="portal-nav t-nav-top">
+          <ul class="portal-nav-top t-portal-nav">
+            <li>
               <a href="#">Abmelden </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="side-nav" class="portal-l-leftsidebar t-background-dark">
+      <div
+        id="main-nav-burger-trigger"
+        class="nav-arrow t-nav-arrow nav-active">
+        <span></span><span></span>
+      </div>
+      <div
+        onclick="loadHomePage();"
+        class="nav-logo t-logo"
+        defaulttheme="inspire-platform"></div>
+      <nav>
+        <ul class="portal-nav-module t-portal-nav-module">
+          <li>
+            <a href="index.html">Start </a>
           </li>
-      </ul>
-  </div>
-</div>
-</div>
+          <li>
+            <a href="dashboard.html">Dashboard </a>
+          </li>
+          <li>
+            <a href="myProjects.html">My Projects </a>
+          </li>
+          <li>
+            <a href="administration.html">Administration </a>
+          </li>
+          <li>
+            <a href="marketplace.html">Marketplace </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-<div id="side-nav" class="portal-l-leftsidebar t-background-dark">
-  <div id="main-nav-burger-trigger" class="nav-arrow t-nav-arrow nav-active">
-    <span></span><span></span>
-  </div>
-  <div onclick="loadHomePage();" class="nav-logo t-logo" defaulttheme="inspire-platform"></div>
-  <nav>
-    <ul class="portal-nav-module t-portal-nav-module">
-        <li>
-          <a href="index.html">Start </a>
-        </li>
-        <li>
-          <a href="dashboard.html">Dashboard </a>
-        </li>
-        <li >
-          <a href="myProjects.html">My Projects </a>
-        </li>
-        <li >
-          <a href="administration.html">Administration </a>
-        </li>
-        <li>
-          <a href="marketplace.html">Marketplace </a>
-        </li>
-    </ul>
-  </nav>
-
-</div>
-
-
-<div class="portal-l-content">
-    <div class="portal-l-contenttop">
-        <ul id="portal-breadcrumb" class="portal-nav-breadcrumb t-portal-nav-breadcrumb">
+    <div class="portal-l-content">
+      <div class="portal-l-contenttop">
+        <ul
+          id="portal-breadcrumb"
+          class="portal-nav-breadcrumb t-portal-nav-breadcrumb">
           <li>
             <a href="administration.html">Administration</a>
           </li>
         </ul>
-        <div id="content-nav">
-        </div>
-    </div>
+        <div id="content-nav"></div>
+      </div>
 
-    <div class="portal-l-contentmain">
+      <div class="portal-l-contentmain">
         <div id="content-component" class="component-wrapper">
           <div class="section-header">
             <h2>Administration</h2>
           </div>
           <div class="l-wrapper-row">
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-user">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-user">
               <div class="thumbnails-header">
                 <a href="administration-users.html">
                   <h3>Benutzer</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>Lorem ipsum dolor sit amet, labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, labore et dolore magna aliquyam
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et ea rebum.
+                  </p>
                 </span>
               </div>
             </div>
 
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-user">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-user">
               <div class="thumbnails-header">
                 <a href="#">
                   <h3>Gruppen</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                  <p>
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                    ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    sadipscing elitr
+                  </p>
                 </span>
               </div>
             </div>
 
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-user">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-user">
               <div class="thumbnails-header">
                 <a href="#">
                   <h3>Privilegien</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                  <p>
+                    At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                    ipsum dolor sit amet.
+                  </p>
                 </span>
               </div>
             </div>
 
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-att">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-att">
               <div class="thumbnails-header">
                 <a href="#">
                   <h3>Attribute</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                  <p>
+                    At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                    ipsum dolor sit amet.
+                  </p>
                 </span>
               </div>
             </div>
 
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-att">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-att">
               <div class="thumbnails-header">
                 <a href="#">
                   <h3>Rollen</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.</p>
+                  <p>
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate
+                    velit esse molestie consequat, vel illum dolore eu feugiat
+                    nulla facilisis at vero eros et accumsan et iusto odio
+                    dignissim.
+                  </p>
                 </span>
               </div>
             </div>
 
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-server">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-server">
               <div class="thumbnails-header">
                 <a href="#">
                   <h3>Servers</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat.
+                  </p>
                 </span>
               </div>
             </div>
 
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-server">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-server">
               <div class="thumbnails-header">
                 <a href="#">
                   <h3>Server Monitoring</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem velit esse molestie consequat</p>
+                  <p>
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                    consequat. Duis autem velit esse molestie consequat
+                  </p>
                 </span>
               </div>
             </div>
 
-            <div class="l-thumbnail administration-thumbnails t-thumbnail category-projekt">
+            <div
+              class="l-thumbnail administration-thumbnails t-thumbnail category-projekt">
               <div class="thumbnails-header">
                 <a href="#">
                   <h3>Projektverwaltung</h3>
                 </a>
                 <div class="btn-icon t-btn-icon btn-submenu">
+                  <div class="ctx-menu">
+                    <p class="menu">Anzeigen</p>
+                    <p class="menu">Bearbeiten</p>
+                    <p class="menu">Löschen</p>
+                  </div>
                 </div>
-
               </div>
               <div class="thumbnails-details">
                 <span>
-                  <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
+                  <p>
+                    Nam liber tempor cum soluta nobis eleifend option congue
+                    nihil imperdiet doming id quod mazim placerat facer possim
+                    assum.
+                  </p>
                 </span>
               </div>
             </div>
           </div>
-
         </div>
-
+      </div>
+    </div>
+    <div class="portal-l-footer">
+      <ul class="t-footer">
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Datenschutz</a></li>
+        <li>
+          <a href="http://www.bpm-inspire.com/">© Inspire Technologies GmbH</a>
+        </li>
+      </ul>
     </div>
 
-
-</div>
-<div class="portal-l-footer">
-  <ul class="t-footer">
-    <li><a href="#">Kontakt</a></li>
-    <li><a href="#">Datenschutz</a></li>
-    <li><a href="http://www.bpm-inspire.com/">© Inspire Technologies GmbH</a> </li>
-  </ul>
-</div>
-
-
-<script type="text/javascript" src="js/frontend.js"></script>
-</body>
+    <script type="text/javascript" src="js/frontend.js"></script>
+  </body>
 </html>
