@@ -21,9 +21,11 @@ $(window).click(function (event) {
 
 $(".t-btn-icon.btn-submenu").click(function (event) {
   const clickedElement = $(this);
-  if ($(".ctx-visible").length > 0) {
-    $(".ctx-visible").removeClass("ctx-visible");
-    return;
+  const contextMenu = clickedElement.children(".ctx-menu");
+  const isVisible = contextMenu.hasClass("ctx-visible");
+
+  $(".ctx-visible").removeClass("ctx-visible");
+  if (!isVisible) {
+    contextMenu.addClass("ctx-visible");
   }
-  clickedElement.children(".ctx-menu").addClass("ctx-visible");
 });
